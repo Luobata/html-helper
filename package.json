@@ -1,6 +1,6 @@
 {
   "name": "html-helper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "help to generate css after html",
   "main": "html-helper.js",
   "dependencies": {
@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "helper": "./bin/helper"
+    "html-helper": "./bin/helper"
   },
   "scripts": {
     "test": "node html-helper.js"
