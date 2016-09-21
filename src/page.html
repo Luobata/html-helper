@@ -1,0 +1,51 @@
+#*
+模块： module-dialog-image-crop 对话框-图片上传、裁剪
+创建： keshen 2016-08-12
+*#
+<div id="sliceEditorSeciton" node-type="module" class="formSection module-dialog-image-crop">
+    <div class="tit">
+        <span class="opt" node-type="btn-close">╳</span>
+        <span>$!{title}</span>
+    </div>
+    <div class="wrap">
+        <form id="sliceLogoForm" action="$!{imgUploadUrl}" method="post" enctype="multipart/form-data">
+            <!-- <input type="hidden" name="_token" value="88d54cbBeedQNDxO58PihegO3aIPZD7xUaMedCIFZwvqrDke594"> -->
+            <input type="hidden" name="_token" value="$!{token}">
+            <div id="sliceFileWar" class="fileWar">
+                <div node-type="logoFileWrap" id="logoFileWrap" class="upFile">
+                    <div node-type="logoFileMask" class="upload-cover-btn">$!{chooseBtnText}</div>
+                    #if($!{autoOpenFile})
+                    #else
+                    <input node-type="logoFile" type="file" class="myFile" name="logoFile" accept="image/x-png,image/jpeg">
+                    #end
+                </div>
+                <span class="frmWarn"></span>
+                <div class="frmInfo">$!{desc}</div>
+            </div>
+            <div class="sliceEditor">
+                <div class="thumb-wrapper">
+                    <div class="thumb-info">
+                        <span>预览</span>
+                        <div id="previewWarn" class="thumb-res"></div>
+                    </div>
+                    <div id="preview" class="preview">
+                        <img id="previewPhoto" src="">
+                        <input id="x1" type="hidden" name="x1" value="0"   size="5">
+                        <input id="y1" type="hidden" name="y1" value="0"   size="5">
+                        <input id="x2" type="hidden" name="x2" value="160" size="5">
+                        <input id="y2" type="hidden" name="y2" value="120" size="5">
+                        <input id="w"  type="hidden" name="w"  value="160" size="5">
+                        <input id="h"  type="hidden" name="h"  value="120" size="5">
+                    </div>
+                </div>
+                <div id="sliceHolder" class="sliceHolder">
+                    <img id="photo" src="">
+                </div>
+            </div>
+            <div class="btns">
+                <input node-type="btn-slice" type="submit" class="btn" value="$!{sureBtnText}">
+                <input node-type="btn-close" type="button" class="btn btn2" value="取消">
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+{
+    "commands": {
+        "init": {
+            "describe": "init css",
+            "options": {
+                "name": {
+                    "describe": "css file name"
+                }
+            }
+        }
+    },
+    "options": {
+        "version": {
+            "alias": "v",
+            "describe": "output the version number"
+        },
+        "help": {
+            "alias": "h",
+            "describe": "output usage information"
+        }
+    }
+}
