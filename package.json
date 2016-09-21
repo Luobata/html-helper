@@ -1,0 +1,30 @@
+{
+  "name": "html-helper",
+  "version": "0.0.1",
+  "description": "help to generate css after html",
+  "main": "html-helper.js",
+  "dependencies": {
+    "better-console": "^0.2.4",
+    "html-parse-stringify": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node html-helper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luobata/html-helper.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "html-healper",
+    "helper"
+  ],
+  "author": "Luobata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Luobata/html-helper/issues"
+  },
+  "homepage": "https://github.com/Luobata/html-helper#readme"
+}
